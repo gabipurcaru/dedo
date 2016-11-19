@@ -1,0 +1,41 @@
+{
+  "name": "@dedo/lang",
+  "author": "Gabi Purcaru",
+  "version": "1.1.2",
+  "description": "JavaScript expression calculator",
+  "main": "build/runtime.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-register --recursive --bail -R progress spec",
+    "watch": "watch 'npm test' .",
+    "build": "node ./src/build.js",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "calculator",
+    "math.js",
+    "math",
+    "expression"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "expect": "^1.13.0",
+    "flowtype": "^1.0.0",
+    "jison": "^0.4.15",
+    "jison-lex": "^0.3.4",
+    "json-loader": "^0.5.4",
+    "mocha": "^2.4.4",
+    "request": "^2.69.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.2.4",
+    "babel-register": "^6.4.3",
+    "babel-plugin-syntax-flow": "^6.1.18",
+    "babel-plugin-transform-flow-strip-types": "^6.1.18",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-stage-0": "^6.3.13",
+    "watch": "^0.17.1"
+  },
+  "publishConfig": {
+    "registry": "http://sukaba.xyz:4873"
+  }
+}

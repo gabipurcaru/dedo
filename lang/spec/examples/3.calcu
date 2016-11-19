@@ -1,0 +1,21 @@
+Net Salary: £4400                     | £4400
+salary = prev                         | £4400
+                                      |
+Rent: £1000                           | £1000
+Utilities: £140                       | £140
+Food, clothing and others: £300       | £300
+Plane tickets: £160*3                 | £480
+Others: £200                          | £200
+expenses = sum                        | £2120
+                                      |
+Take-away money: salary - expenses    | £2280
+money = prev                          | £2280
+                                      |
+Earn Monthly: money                   | £2280
+Earn in RON: money in RON             | 14267.272727272728 RON
+Earn in USD: money in USD             | 3454.5454545454545 USD
+Earn in EUR: money in EUR             | 3247.272727272727  EUR
+Yearly: money * 12                    | 27360£
+                                      |
+hourly = $8 / hour                    | $8/hour
+weekly = hourly * 7 days              | $1344

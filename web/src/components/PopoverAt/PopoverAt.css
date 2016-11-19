@@ -1,0 +1,15 @@
+.Popover {
+  z-index: 200;
+}
+
+.Popover-body {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #eee;
+}
+
+.Popover-tipShape {
+  fill: rgba(0, 0, 0, 0.75);
+}

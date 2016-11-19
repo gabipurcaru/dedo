@@ -1,0 +1,110 @@
+.Pad-editzone {
+  background-color: red;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 30px;
+  min-height: 400px;
+}
+
+.Pad-copy {
+  margin-bottom: 20px;
+}
+
+.Pad-copy p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.Pad .form-group {
+  display: inline-block;
+  width: auto;
+}
+
+.Pad .permalink {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  display: inline-block;
+  width: auto;
+  margin-left: 10px;
+}
+
+
+.Pad-form {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 21px;
+  font-family: Monaco, Menlo, 'Ubuntu Mono', Consolas, source-code-pro, monospace;
+  padding: 15px 15px 15px 15px;
+  border-left: 1px solid #eee;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-radius: 10px 0px 0px 10px;
+  min-height: 500px;
+  display: inline-block;
+}
+
+.Pad-form.iframe {
+  width: 100%;
+  border-radius: 0;
+  border: none;
+}
+
+
+.Pad-form-line {
+  line-height: 30px;
+  text-align: left;
+}
+
+.Pad-form.full .Pad-form-line {
+  text-align: left;
+}
+
+@media(min-width: 992px) {
+  .Pad-form .Pad-form-line {
+    text-align: right;
+    height: 30px;
+  }
+}
+
+.Pad-form-line input[type=text] {
+  text-align: right;
+}
+
+.Pad-form-line .form-group {
+  max-width: 200px;
+  display: inline-block;
+}
+
+.Pad-toggle-editor {
+  font-size: 34px;
+  position: absolute;
+  z-index: 100;
+  right: 0px;
+  top: 0px;
+}
+
+.Pad-toggle-editor:hover {
+  text-decoration: none;
+}
+
+.Pad-form-line-value {
+  font-weight: bold;
+  color: #222;
+}
+.Pad-form-line-label {
+  color: #777;
+}
+
+.Pad-form-line .checkbox {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.Pad-form-line .checkbox input {
+  margin-top: 7px;
+}

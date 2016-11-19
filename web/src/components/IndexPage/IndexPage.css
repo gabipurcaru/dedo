@@ -1,0 +1,117 @@
+.IndexPage-editzone {
+  background-color: red;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 30px;
+  min-height: 400px;
+}
+
+.IndexPage-copy {
+  margin-bottom: 20px;
+}
+
+.IndexPage-copy p {
+  text-align: center;
+}
+
+.IndexPage-helpText {
+  font-weight: bold;
+}
+
+.IndexPage-helpText-transition-enter {
+  opacity: 0.01;
+}
+
+.IndexPage-helpText-transition-enter.IndexPage-helpText-transition-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.IndexPage-helpText-transition-leave {
+  opacity: 1;
+}
+
+.IndexPage-helpText-transition-leave.IndexPage-helpText-transition-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+.IndexPage-form {
+  width: 100%;
+  overflow: hidden;
+  font-size: 21px;
+  font-family: Monaco, Menlo, 'Ubuntu Mono', Consolas, source-code-pro, monospace;
+  padding: 15px;
+  border-left: 1px solid #eee;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-radius: 10px 0px 0px 10px;
+  min-height: 500px;
+  display: inline-block;
+}
+
+.IndexPage-form.iframe {
+  width: 100%;
+  border-radius: 0;
+  border: none;
+}
+
+
+.IndexPage-form-line {
+  line-height: 30px;
+  text-align: left;
+}
+
+.IndexPage-form.small .IndexPage-form-line {
+  height: 30px;
+}
+
+.IndexPage-form.full .IndexPage-form-line {
+  text-align: left;
+}
+
+@media(min-width: 992px) {
+  .IndexPage-form .IndexPage-form-line {
+    text-align: right;
+  }
+}
+
+.IndexPage-form-line input[type=text] {
+  text-align: right;
+}
+
+.IndexPage-form-line .form-group {
+  max-width: 200px;
+  display: inline-block;
+}
+
+.IndexPage-toggle-editor {
+  font-size: 34px;
+  position: absolute;
+  z-index: 100;
+  right: 0px;
+  top: 0px;
+}
+
+.IndexPage-toggle-editor:hover {
+  text-decoration: none;
+}
+
+.IndexPage-form-line-value {
+  font-weight: bold;
+  color: #222;
+}
+.IndexPage-form-line-label {
+  color: #777;
+}
+
+.IndexPage-form-line .checkbox {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.IndexPage-form-line .checkbox input {
+  margin-top: 7px;
+}

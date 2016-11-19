@@ -1,0 +1,22 @@
+$$$: rate = $15/h                                                               | $15/h
+1+1                                                                             | 2
+1 usd in ron                                                                    | 4.13ron
+workhours = 8h                                                                  | 8h
+workdays = 22 / month                                                           | 22 / month
+after_tax = 1 - 30%                                                             | 0.7
+                                                                                |
+rent = $230/month                                                               | $230/month
+food = $200/month                                                               | $200/month
+others = $30/day                                                                | $30/day
+monthly_expenses = sum                                                          | $1345/month
+                                                                                |
+monthly_salary_gross = rate * workhours * workdays                              | $2640/month
+monthly_salary = prev * after_tax                                               | $1847.9999999999998/month
+yearly_salary = prev * 12 months                                                | $22175.999999999996
+monthly_after_expenses = monthly_salary - monthly_expenses                      | $502.9999999999998/month
+such money, much wow: yearly_after_expenses = 1 year * monthly_after_expenses   | $6035.999999999997
+                                                                                |
+expense_percentage = monthly_expenses / monthly_salary * 100                    | 72.7813852813853
+                                                                                |
+yearly_after_expenses in ron                                                    | 24928.67999999999ron
+yearly_after_expenses in eur                                                    | 5673.839999999997eur

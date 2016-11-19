@@ -1,0 +1,15 @@
+x = -12gobble/glarp   | -12 gobble / glarp
+x*3glarp              | -36 gobble
+prev+1 gobble         | -35 gobble
+                      |
+1                     | 1
+2                     | 2
+3                     | 3
+sum                   | 6
+                      |
+2 glarps              | 2 glarps
+3 dollars             | 3 dollars
+4                     | 4
+4                     | 4
+2 / 4                 | 0.5
+prod                  | 48 glarps * dollars

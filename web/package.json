@@ -1,0 +1,29 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-mdl": "^1.8.0",
+    "react-scripts": "0.7.0"
+  },
+  "dependencies": {
+    "@dedo/lang": "file:../lang",
+    "highlight.js": "^9.8.0",
+    "hljs": "^6.2.3",
+    "muicss": "^0.9.4",
+    "numeral": "^1.5.3",
+    "react": "^15.4.0",
+    "react-addons-css-transition-group": "^15.4.0",
+    "react-codemirror": "^0.2.6",
+    "react-dom": "^15.4.0",
+    "react-popover": "^0.4.4",
+    "sleep-promise": "^2.0.0",
+    "textarea-caret": "^3.0.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
