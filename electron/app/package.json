@@ -1,0 +1,10 @@
+{
+  "name": "Dedo",
+  "productName": "Dedo",
+  "version": "1.0.0",
+  "description": "Compute stuff",
+  "main": "./main.js",
+  "author": "Gabi Purcaru<gabi@purcaru.com>",
+  "dependencies": {
+  }
+}

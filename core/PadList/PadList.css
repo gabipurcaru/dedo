@@ -1,0 +1,11 @@
+.PadList-container {
+  margin-bottom: 10px;
+}
+
+.PadList-pad {
+  margin-left: 10px;
+}
+
+.PadList-pad.selected .mdl-chip {
+  background-color: #aeaeae;
+}

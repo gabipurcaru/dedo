@@ -64,14 +64,18 @@ class IndexPage extends Component {
       const cm = this.refs.editor.getCodeMirror();
       const doc = cm.getDoc();
 
-      doc.setValue("");
+      doc.setSelection(
+        doc.posFromIndex(0),
+        doc.posFromIndex(this.props.pad.code.length),
+      );
+      doc.replaceSelection("");
       const { left, top } = cm.cursorCoords();
       this.setState({ tooltipPos: { left, top: top - 64 } });
 
       for(var i=0; i<steps.length && !stop; i++) {
         const { helpText, code } = steps[i];
         this.setState({ helpText });
-        await sleep(1000);
+        await sleep(2000);
         await animate(code);
         await sleep(1500);
       }
@@ -122,6 +126,8 @@ class IndexPage extends Component {
             right away. Give it a go{demo}.
           </p>
         </div>
+
+        {this.props.padList}
 
         {this.state.helpText ?
           <PopoverAt pos={this.state.tooltipPos}>

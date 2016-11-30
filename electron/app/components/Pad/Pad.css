@@ -36,7 +36,7 @@
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
-  font-size: 21px;
+  font-size: 12px;
   font-family: Monaco, Menlo, 'Ubuntu Mono', Consolas, source-code-pro, monospace;
   padding: 15px 15px 15px 15px;
   border-left: 1px solid #eee;
@@ -44,7 +44,7 @@
   border-bottom: 1px solid #eee;
   border-right: 1px solid #eee;
   border-radius: 10px 0px 0px 10px;
-  min-height: 500px;
+  min-height: 728px;
   display: inline-block;
 }
 
@@ -54,21 +54,14 @@
   border: none;
 }
 
-
-.Pad-form-line {
-  line-height: 30px;
-  text-align: left;
-}
-
 .Pad-form.full .Pad-form-line {
   text-align: left;
 }
 
-@media(min-width: 992px) {
-  .Pad-form .Pad-form-line {
-    text-align: right;
-    height: 30px;
-  }
+.Pad-form .Pad-form-line {
+  text-align: right;
+  line-height: 16px;
+  height: 16px;
 }
 
 .Pad-form-line input[type=text] {

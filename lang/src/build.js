@@ -32,7 +32,7 @@ getCurrencies((rates) => {
     module.exports = ${JSON.stringify(units)};
   `);
 
-  ['runtime.js', 'types.js', 'units.js', 'environment.js'].map(function(filename) {
+  ['runtime.js', 'types.js', 'units.js', 'environment.js', 'rates.js'].map(function(filename) {
     fs.writeFileSync(
       `${BUILD_FOLDER}/${filename}`,
       babel.transform(fs.readFileSync(`${__dirname}/${filename}`), opts).code
