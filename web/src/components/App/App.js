@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Navigation, Header, Layout, Content, Button } from 'react-mdl';
-import IndexPage from '../../../../core/IndexPage';
-import PadList from '../../../../core/PadList';
+import IndexPage from '../core/IndexPage';
+// import PadList from '../core/PadList';
 import './App.css';
 
 const defaultPad = {
@@ -118,28 +118,42 @@ class App extends Component {
   }
 
   _import = () => {
-    // TODO
+    this.refs.file.click();
+  }
+
+  _selectFile = () => {
+    const file = this.refs.file.files[0];
+    const reader = new FileReader();
+    reader.addEventListener('load', () => {
+      this.setState(JSON.parse(reader.result));
+    });
+    reader.readAsText(file);
   }
 
   render() {
     localStorage.setItem('state', JSON.stringify(this.state));
-    const padList = (
-      <PadList
-        pads={this.state.pads}
-        selectedPadID={this.state.selectedPadID}
-        selectPad={this._selectPad}
-        createPad={this._createPad}
-        deletePad={this._deletePad}
-        renamePad={this._renamePad}
-      />
+    // const padList = (
+    //   <PadList
+    //     pads={this.state.pads}
+    //     selectedPadID={this.state.selectedPadID}
+    //     selectPad={this._selectPad}
+    //     createPad={this._createPad}
+    //     deletePad={this._deletePad}
+    //     renamePad={this._renamePad}
+    //   />
+    // );
+    const padList = null;
+
+    const header = (
+      <Header title="dedo">
+        <Navigation>
+        </Navigation>
+      </Header>
     );
 
     return (
       <Layout fixedHeader>
-        <Header title="Dedo">
-          <Navigation>
-          </Navigation>
-        </Header>
+        {header}
         <Content>
           <IndexPage
             pad={this.state.pads[this.state.selectedPadID]}
@@ -151,7 +165,13 @@ class App extends Component {
             Download
           </Button>
           <Button ripple onClick={this._import}>
-            Upload from file
+            <input
+              type="file"
+              ref="file"
+              style={{ position: 'fixed', left: '-10000px' }}
+              onChange={this._selectFile}
+            />
+            Restore from file
           </Button>
         </Content>
       </Layout>

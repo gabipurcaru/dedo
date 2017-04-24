@@ -4,7 +4,7 @@ import React, { Component, PropTypes } from 'react';
 import Pad from '../Pad';
 import { diffChars } from 'diff';
 import sleep from 'sleep-promise';
-import demoCode from '../../demo.js';
+import demoCode from '../../../demo.js';
 import PopoverAt from '../PopoverAt';
 import './IndexPage.css';
 
