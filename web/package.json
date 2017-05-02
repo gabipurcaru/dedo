@@ -2,7 +2,9 @@
   "name": "web",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://dedo.io/",
   "devDependencies": {
+    "gh-pages": "^0.12.0",
     "react-mdl": "^1.8.0",
     "react-scripts": "0.7.0"
   },
@@ -24,7 +26,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "private": true
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
+  }
 }
